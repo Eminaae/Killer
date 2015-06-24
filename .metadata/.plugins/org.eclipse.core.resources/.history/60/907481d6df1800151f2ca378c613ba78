@@ -1,0 +1,23 @@
+package ba.bitcamp.week06.tasks;
+
+public class Line implements Shape, Drawable{
+	public int width;
+
+	@Override
+	public void drawOnConsole() {
+		System.out.println("--------");
+	}
+
+	@Override
+	public int Circumference() {
+		return width;
+	}
+
+	@Override
+	public int gerArea() {
+		return 0;
+	}
+
+	
+
+}

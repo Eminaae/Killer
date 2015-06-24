@@ -1,0 +1,27 @@
+package ba.bitcamp.week05.day4.vjezbe;
+
+public class PersonalComputer {
+	private String os;
+	private Integer ram;
+	private Integer price;
+	
+	public String getOs() {
+		return os;
+	}
+	public void setOs(String os) {
+		this.os = os;
+	}
+	public Integer getRam() {
+		return ram;
+	}
+	public void setRam(Integer ram) {
+		this.ram = ram;
+	}
+	public Integer getPrice() {
+		return price;
+	}
+	public void setPrice(Integer price) {
+		this.price = price;
+	}
+	
+}

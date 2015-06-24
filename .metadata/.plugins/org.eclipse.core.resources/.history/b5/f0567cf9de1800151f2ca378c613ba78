@@ -1,0 +1,11 @@
+package ba.bitcamp.week06.tasks;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Line l = new Line();
+		l.drawOnConsole();
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package ba.bitcamp.week06.day03.predavanje;
+
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class Task01{
+	
+	private static class TestPanel extends JFrame{
+		public void paintComponent(Graphics g){
+			super.paintComponents(g);
+			g.drawString("Hello", 15, 50);
+		}
+	}
+	
+
+	public static void main(String[] args) {
+	JOptionPane.showMessageDialog(null, "Hello World");
+	}
+}

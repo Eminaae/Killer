@@ -1,0 +1,30 @@
+package ba.bitcamp.week06.tasks;
+
+
+public class Clock implements WriteableClock{
+	public int hour;
+	public int minute;
+	public int secunde;
+	
+	
+	@Override
+	public void writeToFile(String filename, String time) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void addToFile(String filename, int format) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void writeToFile(String filename, int ampmFormat) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}
+
+
+
+

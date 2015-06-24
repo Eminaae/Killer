@@ -1,0 +1,27 @@
+package ba.bitcamp.week05.day4.vjezbe;
+
+public class DesktopComputer extends StationaryComputer{
+	private Integer ramSlots;
+	private  Boolean isOverclock;
+	private Boolean hasOpticalDrive;
+	
+	public Integer getRamSlots() {
+		return ramSlots;
+	}
+	public void setRamSlots(Integer ramSlots) {
+		this.ramSlots = ramSlots;
+	}
+	public Boolean getIsOverclock() {
+		return isOverclock;
+	}
+	public void setIsOverclock(Boolean isOverclock) {
+		this.isOverclock = isOverclock;
+	}
+	public Boolean getHasOpticalDrive() {
+		return hasOpticalDrive;
+	}
+	public void setHasOpticalDrive(Boolean hasOpticalDrive) {
+		this.hasOpticalDrive = hasOpticalDrive;
+	}
+	
+}

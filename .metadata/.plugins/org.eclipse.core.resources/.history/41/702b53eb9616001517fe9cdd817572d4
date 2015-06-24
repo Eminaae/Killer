@@ -1,0 +1,50 @@
+package ba.bitcamp.week05.day05.vjezbe;
+
+public class Animal extends LifeForm {
+	public static Integer weigth;
+	@Override
+	public String toString() {
+		return "Animal [typeOfFood=" + typeOfFood + ", getWeigth()="
+				+ getWeigth() + ", getTypeOfFood()=" + getTypeOfFood() + "]";
+	}
+
+	public static String typeOfFood;
+	public static final int EAT_ANIMALS = 0;
+	public static final int EAT_PLANTS = 1;
+
+	/**
+	 * @param weigth
+	 * @param typeOfFood
+	 */
+	public Animal(Boolean isAlive,Integer weigth, String typeOfFood) {
+		super(false);
+		this.weigth = weigth;
+		this.typeOfFood = typeOfFood;
+	}
+
+
+	public Integer getWeigth() {
+		return weigth;
+	}
+
+	public void setWeigth(Integer weigth) {
+		this.weigth = weigth;
+	}
+
+	public String getTypeOfFood() {
+		return typeOfFood;
+	}
+
+	public void setTypeOfFood(String typeOfFood) {
+		this.typeOfFood = typeOfFood;
+	}
+
+	public static int getEatAnimals() {
+		return EAT_ANIMALS;
+	}
+
+	public static int getEatPlants() {
+		return EAT_PLANTS;
+	}
+
+}

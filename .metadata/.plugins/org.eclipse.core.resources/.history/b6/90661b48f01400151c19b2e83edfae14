@@ -1,0 +1,16 @@
+package ba.bitcamp.week5.day3.vjezbe;
+
+public class MainSpeakers {
+
+	public static void main(String[] args) {
+	Speakers s = new Speakers("Samsung",10, true, 150 , 88);
+	System.out.println(s.currentVolume());
+	System.out.println(s.disable());
+	System.out.println(s.enable());
+	System.out.println(s.getPrice());
+	System.out.println(s.toString());
+	
+	s.increaseVolume(2);
+	}
+
+}

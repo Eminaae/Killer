@@ -1,0 +1,15 @@
+package ba.bitcamp.week06.D01;
+
+public class Bar {
+	 int name;
+
+	/**
+	 * @param name
+	 */
+	public Bar(int name) {
+		super();
+		this.name = name;
+	}
+	
+	
+}

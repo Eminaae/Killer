@@ -1,0 +1,14 @@
+package ba.bitcamp.week06.day03.vjezbe;
+
+import javax.swing.JFrame;
+
+public class Main {
+
+	public static void main(String[] args) {
+		JFrame prozor = new JFrame(); //kreiramo prozor
+		prozor.setVisible(true);//Da vidimo prozor kreiramo set i get
+		prozor.setTitle("Prozor");
+
+	}
+
+}

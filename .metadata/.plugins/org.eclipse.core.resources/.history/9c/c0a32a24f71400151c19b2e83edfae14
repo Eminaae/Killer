@@ -1,0 +1,33 @@
+package ba.bitcamp.week5.day3.vjezbe;
+/**
+ * Describes cell phone battery.
+ * @author emina.arapcic
+ *
+ */
+public class Battery {
+	private String producerName;
+	private double batteryStatus; // Percentage of charging
+	private double chargingSpeed;
+	
+	/**
+	 * Default constructor
+	 * @param makerName
+	 * @param chargingSpeed
+	 */
+	public Battery(String producerName, double chargingSpeed){
+		this.producerName = producerName;
+		this.chargingSpeed = chargingSpeed;
+		batteryStatus = 50;	
+	}
+	/**
+	 * Returns battery manufacturer
+	 * @return
+	 */
+	public String getProducerName(){
+		return producerName;
+	}
+	
+	
+	
+	
+}

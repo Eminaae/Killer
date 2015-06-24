@@ -1,0 +1,19 @@
+package ba.bitcamp.week05.day4.vjezbe;
+
+public class PortableComputer extends PersonalComputer{
+	private Integer weight;
+	private Integer displaySize;
+	private Boolean hasWiFi;
+	
+	public Integer getWeight() {
+		return weight;
+	}
+	
+	public Integer getDisplaySize() {
+		return displaySize;
+	}
+	
+	public Boolean getHasWiFi() {
+		return hasWiFi;
+	}
+}

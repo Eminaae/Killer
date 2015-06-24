@@ -1,0 +1,16 @@
+package ba.bitcamp.week05.day05;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class IgrajPogodiBroj {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Igraj, pogodi broj: ");
+		int unos = in.nextInt();
+		
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package ba.bitcamp.week06.vjezbe;
+
+public interface Interface1 {
+
+}

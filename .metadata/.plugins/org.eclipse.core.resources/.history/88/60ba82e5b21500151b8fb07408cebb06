@@ -1,0 +1,7 @@
+package ba.bitcamp.week05.day4;
+
+public class KPDom {
+	public Integer numberOfPatients;
+	public Integer numberOfDoctors;
+
+}

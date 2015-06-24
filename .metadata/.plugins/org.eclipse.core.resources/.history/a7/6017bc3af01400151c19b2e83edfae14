@@ -1,0 +1,104 @@
+package ba.bitcamp.week5.day3.vjezbe;
+/**
+ * Describing cell phone speakers
+ * @author emina.arapcic
+ *
+ */
+public class Speakers {
+	private String nameProducer;
+	private int price;
+	private boolean state;
+	private int currentVolume;
+	private double battery;
+
+	/**
+	 * Default constructor
+	 * @param nameProducer - Producer name
+	 * @param price - Speakers price
+	 * @param state - state is true (on) as default state
+	 * @param currentVolume as default is 0
+	 * @param battery Consumption of battery
+	 */
+	public Speakers(String nameProducer, int price, boolean state, int currentVolume, double battery){
+		this.nameProducer = nameProducer;
+		this.price = price;
+		this.state = true;
+		this.currentVolume = 0;
+		this.battery = battery;
+	}
+	/**
+	 * Producer name
+	 * @return
+	 */
+	public String getProducerName(){
+		return nameProducer;
+	}
+	/**
+	 * Cell phone speakers price. 
+	 * @return price
+	 */
+	public int getPrice(){
+		return price;
+	}
+	/**
+	 * Speakers on/off
+	 * @return true or false
+	 */
+	public boolean isOn(){
+		return state;
+	}
+	/**
+	 * Returns current speakers volume.
+	 * @return currentVolume
+	 */
+	public int currentVolume(){
+		return currentVolume;
+	}
+	/**
+	 * Turns on speakers
+	 * @return
+	 */
+	public boolean enable(){
+		return true;	
+	}
+	
+	/**
+	 * Turns off speakers
+	 * @return
+	 */
+	
+	public boolean disable(){
+		return false;
+	}
+	/**
+	 * Decreases speakers volume
+	 * @param decreaseVolume
+	 */
+	public void lowerVolume(int decreaseVolume){
+		if(decreaseVolume > 0 && decreaseVolume < 100){
+			this.currentVolume --;
+		}
+	}
+	
+	/**
+	 * Increase speakers volume;
+	 * @param higherVolume
+	 */
+	
+	public void increaseVolume(int higherVolume){
+		if(higherVolume > 0 && higherVolume < 100){
+			this.currentVolume += 10;
+		}
+	}
+	
+	/**
+	 *Returns string
+	 */
+	public String toString() {
+		String s = " ";
+		return s = "Speakers " + nameProducer + ", price " + price
+				+ ", state " + state + ", currentVolume = " + currentVolume
+				+ ", battery = " + battery;
+	}
+	
+}

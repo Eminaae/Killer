@@ -1,0 +1,11 @@
+package ba.bitcamp.week06.tasks;
+
+public class MainClock {
+
+	public static void main(String[] args) {
+		Clock c = new Clock ();
+		c.addToFile("S01Week06D01/src", c.AMPM_FORMAT_NO_SECONDS);
+		c.writeToFile("S01Week06D01/src/test", c.AMPM_FORMAT);
+	}
+
+}

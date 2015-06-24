@@ -1,0 +1,46 @@
+package ba.bitcamp.week05.day05.vjezbe;
+
+public class Zebra extends Animal{
+	
+	public Integer dob;
+	public String state;
+	public static final int HEALTHY = 1;
+	public static final int DEADLY_SICK = 0;
+
+	/**
+	 * @param weigth
+	 * @param typeOfFood
+	 * @param dob
+	 * @param state
+	 */
+	public Zebra(Integer weigth, String typeOfFood, Integer dob, String state) {
+		super(isAlive, weigth, typeOfFood);
+		this.dob = dob;
+		this.state = state;
+	}
+
+	public Integer getDob() {
+		return dob;
+	}
+
+	public void setDob(Integer dob) {
+		this.dob = dob;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public static int getHealthy() {
+		return HEALTHY;
+	}
+
+	public static int getDeadlySick() {
+		return DEADLY_SICK;
+	}
+		
+}

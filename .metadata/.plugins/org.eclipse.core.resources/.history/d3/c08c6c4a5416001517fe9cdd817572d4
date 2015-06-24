@@ -1,0 +1,15 @@
+package ba.bitcamp.week05.day05;
+
+public class CampStringBuilder {
+	
+	public void prepend(Object o){
+		
+	String s = "Dot saw I was Tod";
+    
+    StringBuilder sb = new StringBuilder(s);
+    
+    sb.reverse();  // reverse it
+    
+    
+}
+}

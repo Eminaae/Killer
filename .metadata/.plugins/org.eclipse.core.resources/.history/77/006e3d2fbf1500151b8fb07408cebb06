@@ -1,0 +1,36 @@
+package ba.bitcamp.week05.day4.vjezbe;
+
+public class Main {
+
+	public static void main(String[] args) {
+		PersonalComputer pc = new PersonalComputer();
+		pc.setOs("Android");
+		pc.setPrice(1500);
+		pc.setRam(8);
+		System.out.println(pc.getOs());
+		System.out.println(pc.getPrice());
+		System.out.println(pc.getRam());
+		
+		PortableComputer p = new PortableComputer();
+		p.getDisplaySize();
+		p.getHasWiFi();
+		p.getWeight();
+		
+		StationaryComputer sc = new StationaryComputer();
+		sc.setSpeed(250);
+		sc.setPower(15);
+		sc.setHdCapacity(1);
+		
+		DesktopComputer dc = new DesktopComputer();
+		dc.getIsOverclock();
+		dc.getRamSlots();
+		dc.getHasOpticalDrive();
+		
+		Laptop l = new Laptop();
+		l.getHasBluetooth();
+		l.getBatteryCells();
+		l.getHasNumKeyboard();
+		
+		
+	}
+}

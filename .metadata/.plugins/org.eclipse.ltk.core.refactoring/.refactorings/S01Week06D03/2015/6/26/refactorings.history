@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;ba.bitcamp.week06.day03.predavanje.Task01.button&apos; in &apos;ba.bitcamp.week06.day03.predavanje.Task01&apos;&#x0A;- Original project: &apos;S01Week06D03&apos;&#x0A;- Original element: &apos;ba.bitcamp.week06.day03.predavanje.Task01.button&apos;&#x0A;- Getter method name: &apos;getButton&apos;&#x0A;- Setter method name: &apos;setButton&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;button&apos;" flags="589830" getter="getButton" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;ba.bitcamp.week06.day03.predavanje{Task01.java[Task01^button" insertion="1" setter="setButton" stamp="1435150496298" version="1.0" visibility="1"/>
+</session>

@@ -1,0 +1,10 @@
+package ba.bitcamp.week05.day4.vjezbe;
+
+public class Main {
+
+	public static void main(String[] args) {
+		PersonalComputer pc = new PersonalComputer();
+		pc.setOs("Android");
+		System.out.println(pc.getOs());
+	}
+}

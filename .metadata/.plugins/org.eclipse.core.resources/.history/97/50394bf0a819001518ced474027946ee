@@ -1,0 +1,87 @@
+import java.util.Arrays;
+
+
+public abstract class Computer {
+	public static final int MAC_ADDRESS = 12;
+	public String name;
+	public MACAddress mac;
+	
+	/**
+	 * Constructor
+	 * @param name
+	 * @param mac
+	 */
+	public Computer(String name, char[] mac) {
+		super();
+		this.name = name;
+		this.mac = new MACAddress(mac);
+	}
+	
+	public Computer() {
+		this.name = "Computer1";
+		
+		char[] arr = {'0', '1', '2', '3', '4', '5' // TODO
+		this.mac = new MACAddress(arr);
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getMac() {			
+		return mac.toString();
+	}
+	
+	class MACAddress {
+		// 0123456789ab
+		private char[] mac;
+		
+		public MACAddress(char[] mac) {
+			this.mac = mac;
+		}
+		
+		// 01:23:45:67:89:ab
+		public String toString() {
+			String s = "";
+			
+			// TODO
+			
+			return s;
+		}
+	}
+	
+	
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof Computer)) {
+			return false;
+		}
+		Computer other = (Computer) obj;
+		if (!Arrays.equals(mac, other.mac)) {
+			return false;
+		}
+		if (name == null) {
+			if (other.name != null) {
+				return false;
+			}
+		} else if (!name.equals(other.name)) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		String s = "";
+		s += "Computer name: " + name + "," + "MAC: " + Arrays.toString(mac);
+		return s;
+	
+	}
+}

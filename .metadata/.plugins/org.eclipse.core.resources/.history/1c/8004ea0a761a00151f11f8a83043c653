@@ -1,0 +1,39 @@
+package ba.bitcamp.week06.day03.predavanje;
+
+import java.awt.BorderLayout;
+import java.awt.Graphics;
+import java.awt.Window;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+public class Task01 extends JFrame {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2748658026041925732L;
+	private JLabel text = new JLabel("Hello world");
+	private JButton button = new JButton("Hello");
+	
+	
+	// CONSTRUCTOR
+	public Task01() {
+		setVisible(true);
+		setTitle("Task 1");
+		setSize(400, 300);
+		
+		setLayout(new BorderLayout());
+		add(text);
+		text.setHorizontalAlignment(NORMAL);
+		add(button, BorderLayout.SOUTH);	
+	}
+
+	public static void main(String[] args) {
+		
+		new Task01();
+	}
+}

@@ -1,0 +1,6 @@
+package ba.bitcamp.week06.vjezbe;
+
+public interface Adorable{
+	//Runnable, comparable
+	public void print(); //method
+}

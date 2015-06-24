@@ -1,0 +1,25 @@
+package ba.bitcamp.week06.D01;
+
+public class Bar {
+	 int name;
+
+	/**
+	 * @param name
+	 */
+	public Bar(int name) {
+		super();
+		this.name = name;
+	}
+	
+	public int compare(Bar other){
+		int thisLength = this.name.length();
+		int otherLength = other.name.length();
+		if (thisLength > otherLength)
+			return 1;
+		else if (thisLength < otherLength)
+			return -1;
+		else 
+			return 0;
+	}
+		
+}

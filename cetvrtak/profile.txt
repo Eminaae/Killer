@@ -1,0 +1,4 @@
+Name:            ;
+Email:           '
+Favorite Color:  h
+Yearly Income:   $9.00

@@ -1,0 +1,48 @@
+package ba.bitcamp.week06.day03.predavanje;
+
+import java.awt.BorderLayout;
+import java.awt.Graphics;
+import java.awt.Window;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+public class Task01 extends JFrame{
+	
+	private JButton text = new JButton("Hello World");
+	private JButton button = new JButton("Hello");
+	
+	//CONSTRUCTOR
+	public Task01(){
+		setLayout(new BorderLayout());
+		add(text, BorderLayout.SOUTH);
+		add(button);
+		setVisible(true);
+		setTitle("Task 1");
+		setSize(400,300);
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+	
+	
+	JPanel content = new JPanel();
+
+	
+	/*JPanel content = new JPanel();
+		content.setLayout(new BorderLayout());//postavljamo border layout manager EastWestNorthSouthCenter
+		content.add(displayPanel, BorderLayout.CENTER);
+		content.add(xoButton, BorderLayout.SOUTH);
+
+		JFrame window = new JFrame("GUI TEST");
+		window.setContentPane(content);
+		window.setSize(250,100);
+		window.setLocation(500,700);
+		window.setVisible(true);
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);*/
+	}
+}

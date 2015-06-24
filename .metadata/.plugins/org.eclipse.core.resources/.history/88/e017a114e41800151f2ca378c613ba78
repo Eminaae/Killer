@@ -1,0 +1,20 @@
+package ba.bitcamp.week06.tasks;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Line l = new Line(10);
+		l.drawOnConsole();
+		
+		Rectangle r = new Rectangle();
+		r.drawOnConsole();
+		/*r.drawOnConsole();
+		r.gerArea();
+		r.Circumference();
+		System.out.println(r.toString());
+		System.out.println(l.equals(r));*/
+		
+	
+	}
+
+}

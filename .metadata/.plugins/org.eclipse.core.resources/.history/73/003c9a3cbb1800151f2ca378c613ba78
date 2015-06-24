@@ -1,0 +1,20 @@
+package ba.bitcamp.week06.D01;
+
+public class Foo {
+	 int foones;
+
+	/**
+	 * @param foones
+	 */
+	public Foo(int foones) {
+		super();
+		this.foones = foones;
+	}
+	 public int compare(Foo other){
+		 if (this.foones > other.foones)
+			 return 1;
+		 else if ( this.foones == other)
+			 return 0;
+		 else
+	 }
+}

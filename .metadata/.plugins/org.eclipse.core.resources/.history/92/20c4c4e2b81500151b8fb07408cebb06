@@ -1,0 +1,13 @@
+package ba.bitcamp.week05.day4.vjezbe;
+
+public class Main {
+
+	public static void main(String[] args) {
+	 PersonalComputer pc = new PersonalComputer();
+	 pc.getOs();
+	 pc.getPrice();
+	 pc.getRam();
+
+	}
+
+}

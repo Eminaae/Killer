@@ -1,0 +1,25 @@
+package ba.bitcamp.week06.tasks;
+
+public class Rectangle implements Shape, Drawable {
+	public int width =3;
+	public int height =4;
+	@Override
+	public void drawOnConsole() {
+		System.out.println("****");
+		System.out.println("****");
+		System.out.println("****");
+		
+	}
+	@Override
+	public int Circumference() {
+		// TODO Auto-generated method stub
+		return 2*width + 2*height;
+	}
+	@Override
+	public int gerArea() {
+		
+		return width*height;
+	}
+	
+
+}

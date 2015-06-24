@@ -1,0 +1,12 @@
+package ba.bitcamp.week06.tasks;
+
+public class MainClock {
+
+	private static int MILITARY_FORMAT;
+
+	public static void main(String[] args) {
+		Clock c = new Clock (15, 02, 36);
+		c.addToFile("S01Week06D01/src/test", MILITARY_FORMAT);
+	}
+
+}

@@ -14,7 +14,7 @@ public class Main {
 
 	public static void draw(Draw w) {
 		BufferedImage img = new BufferedImage(1200, 800,
-				BufferedImage.TYPE_INT_ARGB);
+		BufferedImage.TYPE_INT_ARGB);
 		Graphics g = img.getGraphics();
 		// **** Draw here ****
 

@@ -2,6 +2,8 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
+import ba.bitcamp.week4.TextIO;
+
 
 public class DrawFromFile {
 

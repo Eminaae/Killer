@@ -1,0 +1,5 @@
+package ba.bitcamp.client.to.server;
+
+public class Client {
+
+}

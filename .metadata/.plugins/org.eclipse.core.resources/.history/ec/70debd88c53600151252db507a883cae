@@ -1,0 +1,38 @@
+package ba.bitcamp.week11.day4.exercises;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class ChatServer {
+
+	public static void main(String[] args) {
+		try {
+			ServerSocket server = new ServerSocket();
+			
+			while(true){
+				Socket client = server.accept();
+				new ClientThread(client); // clientu damo novi thread
+			}
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+		static class ClientThread implements Runnable{
+			private Socket client;
+			public ClientThread(Socket client){
+				this.client = client;
+				Thread t = new Thread(this);
+				t.start();
+			}
+
+			@Override
+			public void run() {
+				
+			}
+		}
+
+	}
+
+}

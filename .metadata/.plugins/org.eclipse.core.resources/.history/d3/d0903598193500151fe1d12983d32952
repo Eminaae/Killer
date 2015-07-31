@@ -1,0 +1,27 @@
+package ba.bitcamp.ime;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+
+public class Ime {
+
+	public static void main(String[] args) {
+		//server
+		try{
+				Socket socket1 = new Socket();
+				socket1.connect(new InetSocketAddress("10.08.82.98", 8888));
+				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket1.getOutputStream()));
+				writer.write("Emina");
+				writer.newLine();
+				writer.close();
+				System.out.println("Emina");
+				}	catch(IOException e) {
+					e.printStackTrace();
+				}
+
+	}
+
+}

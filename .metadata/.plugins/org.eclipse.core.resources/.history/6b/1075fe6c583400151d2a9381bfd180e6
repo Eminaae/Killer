@@ -1,0 +1,21 @@
+package ba.bitcamp.app;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
+public class Server {
+
+	public static void main(String[] args) {
+		//statican, ceka klienta
+	
+		try {	
+			System.out.println("Application started...");
+			ServerSocket server = new ServerSocket(54321);//parametar je port 54321
+			System.out.println("Server Socket made!");
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TextIO.java&apos; to &apos;BirthdayMemo/src/ba.bitcamp.week7.day4.bdmemo&apos;&#x0A;- Original project: &apos;EOFThrowString&apos;&#x0A;- Destination element: &apos;BirthdayMemo/src/ba.bitcamp.week7.day4.bdmemo&apos;&#x0A;- Original element: &apos;TextIO.java&apos;" description="Copy compilation unit" destination="=BirthdayMemo/src&lt;ba.bitcamp.week7.day4.bdmemo" element1="/src&lt;{TextIO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1435844979415" units="1" version="1.0"/>
+</session>

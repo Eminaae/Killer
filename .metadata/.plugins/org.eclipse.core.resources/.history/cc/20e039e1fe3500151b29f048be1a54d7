@@ -1,0 +1,41 @@
+package ba.bitcamp.http;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Http {
+
+	public static final int PORT = 5432;
+	
+	public static void main(String[] args) throws IOException {
+		ServerSocket httpServer = new ServerSocket(PORT);
+		
+		while (true) {
+			Socket httpClient = httpServer.accept();
+			System.out.println("Client connected...");
+			File file = new File("src/ba/bitcamp/http/data.txt");
+			byte[] bytes = new byte[(int) file.length()];
+			FileInputStream inFile = new FileInputStream(file);
+			
+			BufferedReader httpReader = new BufferedReader(new InputStreamReader(inFile));
+			BufferedWriter httpWriter = new BufferedWriter(new OutputStreamWriter(httpClient.getOutputStream()));
+			
+			httpReader.read();
+			System.out.print(httpClient.getInetAddress().getHostAddress());
+			httpWriter.newLine();
+			httpWriter.flush();
+	
+		}
+		
+		
+	}
+
+}

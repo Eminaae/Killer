@@ -1,0 +1,45 @@
+package ba.bitcamp.week11.day5.exercises;
+
+import java.awt.Color;
+import java.awt.GridLayout;
+
+import javax.swing.BorderFactory;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Client extends JFrame{
+
+	private JLabel[][] label;
+	private JFrame frame;
+	
+	
+	public Client(){
+		label = new JLabel[20][20];
+		setTitle("Client");
+		setLayout(new GridLayout(20, 20, 5, 5));
+		
+		for(int i = 0; i < label.length; i++){
+			for(int j = 0; j < label[i].length; j++){
+				label[i][j] = new JLabel("");
+				label[i][j].setBorder(BorderFactory.createBevelBorder(DO_NOTHING_ON_CLOSE, getBackground().BLACK, getBackground().CYAN));
+				label[5][5] = new JLabel("x");
+				label[5][5].getBackground().getRed();
+
+				add(label[i][j]);
+			}
+			System.out.println();
+		}
+		
+		setSize(300, 300);
+		setLocationRelativeTo(null);
+ 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+		
+	
+	}
+	
+	public static void main(String[] args) {
+		Client c = new Client();
+	}
+}

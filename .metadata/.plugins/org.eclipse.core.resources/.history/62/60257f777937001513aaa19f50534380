@@ -1,0 +1,93 @@
+package ba.bitcamp.week11.day5.exercises;
+
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Client extends JFrame {
+
+	private JLabel[][] label;
+	private JFrame frame;
+
+	int x = 5;
+	int y = 5;
+
+	public Client() {
+		label = new JLabel[20][20];
+		setTitle("Client");
+		setLayout(new GridLayout(20, 20, 5, 5));
+		addKeyListener(new KeyAction());
+
+		for (int i = 0; i < label.length; i++) {
+			for (int j = 0; j < label[i].length; j++) {
+				label[i][j] = new JLabel("");
+				label[i][j].setBorder(BorderFactory.createBevelBorder(
+						DO_NOTHING_ON_CLOSE, getForeground().BLACK,
+						getForeground().RED));
+				label[5][5] = new JLabel("x");
+				add(label[i][j]);
+			}
+			System.out.println();
+		}
+
+		setSize(300, 300);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+
+	}
+
+	public class KeyAction implements KeyListener {
+
+		@Override
+		public void keyTyped(KeyEvent e) {
+			// TODO Auto-generated method stub
+
+		}
+
+		@Override
+		public void keyReleased(KeyEvent e) {
+			// TODO Auto-generated method stub
+
+		}
+
+		@Override
+		public void keyPressed(KeyEvent e) {
+			
+			if (e.getKeyCode() == e.VK_RIGHT && y > 0 && y < 19 ) {
+					label[x][y].setVisible(false);
+					y += 1;
+					label[x][y].setVisible(true);
+				}
+
+			if (e.getKeyCode() == e.VK_LEFT && y > 0 && y < 19) {
+					label[x][y].setVisible(false);
+					y -= 1;
+					label[x][y].setVisible(true);
+				}
+		
+			if (e.getKeyCode() == e.VK_DOWN && x > 0 && x < 19) {
+					label[x][y].setVisible(false);
+					x += 1;
+					label[x][y].setVisible(true);
+				}
+			
+			if (e.getKeyCode() == e.VK_UP && x > 0 && x < 19) {
+					label[x][y].setVisible(false);
+					x -= 1;
+					label[x][y].setVisible(true);
+				}
+			}
+		}
+
+
+	public static void main(String[] args) {
+		Client c = new Client();
+	}
+}

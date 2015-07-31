@@ -1,0 +1,20 @@
+package ba.bitcamp.week11.day1.exercises;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+//URL pokazatelj, locator na neki link
+public class URLExamples {
+
+	public static void main(String[] args) {
+		// http://google.ba
+		try {
+			URL urll = new URL("http://artsymomma.com/wp-content/uploads/2012/03/thumbprint-smiley-faces-handprints.jpg");
+		} catch (MalformedURLException e) {
+			System.out.println("Bad URL");
+			e.printStackTrace();
+		}
+
+	}
+
+}

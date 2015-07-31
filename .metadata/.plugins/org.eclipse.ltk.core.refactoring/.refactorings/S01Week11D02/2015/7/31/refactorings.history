@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;Public&apos; to &apos;S01Week11D02&apos;" description="Move &apos;Public&apos; to &apos;S01Week11D02&apos;" destination="/S01Week11D02" element1="/S01Week11D03/Public" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1438173147554" updateReferences="true"/>
+</session>

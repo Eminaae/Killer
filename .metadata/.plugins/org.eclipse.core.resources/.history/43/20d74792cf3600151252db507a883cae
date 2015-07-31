@@ -1,0 +1,40 @@
+package ba.bitcamp.week11.day4.exercises;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class ChatApplication {
+
+	public static void main(String[] args) {
+		try {
+			ServerSocket server = new ServerSocket(5533);
+			while (true) {
+				Socket client = server.accept(); // Connects client
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public class Client  implements Runnable{
+
+		private Socket client;
+		
+		public Client(Socket client){
+			this.client = client;
+		}
+		@Override
+		public void run() {
+			Socket client = new Socket();
+		}
+	}
+
+	@Override
+	public void run() {
+		BufferedReader br = new BufferedReader(new InputStreamReader(client.getInputStream))
+		
+	}
+}

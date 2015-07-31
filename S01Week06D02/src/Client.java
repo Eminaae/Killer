@@ -23,7 +23,7 @@ public class Client implements Connectable{
 	@Override
 	public void connect(Network lan) {
 		if(pcConnected == null && lanConnected == null){
-			
+		
 		}
 		
 	}
@@ -32,17 +32,17 @@ public class Client implements Connectable{
 			this.pcConnected = c;
 		}	
 		
-	public  void getConnect(Computer c){
+	//public  void getConnect(Computer c){
 		
 		
 		
 	}
 	
-	public static void getDisconnect(){
+	//public static void getDisconnect(){
 		
-	}
+	//}
 		
-	}
+	//}
 	@Override
 	public String toString() {
 		String s = "";

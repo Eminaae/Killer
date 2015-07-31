@@ -1,0 +1,12 @@
+package ba.bitcamp.week11.day1.lectures;
+
+import java.net.URL;
+
+public class URLTest {
+
+	public static void main(String[] args) {
+		URL abhUrl = new URL("http://www.atlantbh.com");
+
+	}
+
+}

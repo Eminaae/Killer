@@ -1,5 +1,10 @@
 package cardgame;
 
+/** 
+ * Class contains card information
+ * @author kristina.pupavac
+ *
+ */
 public class CardData {
 	public static final int HEART = 0;
 	public static final int SPADE = 1;
@@ -14,7 +19,13 @@ public class CardData {
 
 	private int value;
 	private int suit;
-
+	
+	/**
+	 * Default constructor
+	 * @param value
+	 * @param suit
+	 * @throws Exception
+	 */
 	public CardData(int value, int suit) throws Exception {
 		if (value > CardData.KING && value < CardData.ACE && suit < CardData.HEART && suit > CardData.TREF) {
 		} else {

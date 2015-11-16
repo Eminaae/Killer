@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 package vjezbeS04D02;
+=======
+package Srtanje;
+
+>>>>>>> 1141ed63b672e03d4bca05a5fe1494f33877cb59
 
 import java.io.*;
 import java.util.IllegalFormatException;
@@ -1005,4 +1010,8 @@ public class TextIO {
         }
     }
         
+<<<<<<< HEAD
 } // end of class TextIO
+=======
+} // end of class TextIO
+>>>>>>> 1141ed63b672e03d4bca05a5fe1494f33877cb59

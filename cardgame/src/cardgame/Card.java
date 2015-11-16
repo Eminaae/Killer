@@ -3,27 +3,30 @@ package cardgame;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
-
-
+/**
+ * Class making one card with all information
+ * @author kristina.pupavac
+ *
+ */
 public class Card {
 	private static final long serialVersionUID = 5596522208485867270L;
 
 	private CardData cardData;
 	private BufferedImage suitImge;
 	
-
+	/**
+	 * Default constructor
+	 * @param cardData
+	 */
 	public Card(CardData cardData) {
 		this.cardData = cardData;
 		try {
 			CardImages.BufferCardImages();
-		} catch (IOException e) { 
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		processImage();
 	}
-	
-	
-	
 
 	/**
 	 * @return the cardData
@@ -32,18 +35,13 @@ public class Card {
 		return cardData;
 	}
 
-
-
-
 	/**
-	 * @param cardData the cardData to set
+	 * @param cardData
+	 *            the cardData to set
 	 */
 	public void setCardData(CardData cardData) {
 		this.cardData = cardData;
 	}
-
-
-
 
 	/**
 	 * @return the suitImge
@@ -52,18 +50,13 @@ public class Card {
 		return suitImge;
 	}
 
-
-
-
 	/**
-	 * @param suitImge the suitImge to set
+	 * @param suitImge
+	 *            the suitImge to set
 	 */
 	public void setSuitImge(BufferedImage suitImge) {
 		this.suitImge = suitImge;
 	}
-
-
-
 
 	private void processImage() {
 		if (this.cardData.getSuit() == CardData.HEART) {

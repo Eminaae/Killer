@@ -4,9 +4,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
+/**
+ * Class creating one card deck
+ * @author kristina.pupavac
+ *
+ */
 public class Deck {
 	public static ArrayList<Card> cards = new ArrayList<>();
-
+	
+	/**
+	 * Deck default constructor
+	 */
 	public Deck() {
 		try {
 			cards.add(new Card(new CardData(CardData.ACE, CardData.HEART)));

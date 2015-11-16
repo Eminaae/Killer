@@ -5,7 +5,11 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
-
+/**
+ * Class importing card images
+ * @author kristina.pupavac
+ *
+ */
 public class CardImages {
 	private static boolean ready = false;
 

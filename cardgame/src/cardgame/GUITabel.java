@@ -2,9 +2,14 @@ package cardgame;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -17,8 +22,11 @@ import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 import javax.swing.border.Border;
+
 
 public class GUITabel extends JFrame {
 	private static final long serialVersionUID = -2870577041754803449L;
@@ -35,6 +43,9 @@ public class GUITabel extends JFrame {
 	private JMenuItem howToPlay = new JMenuItem("How to play");
 	private JLabel[] cardLabels = new JLabel[5];
 	private JButton button = new JButton("FINISH");
+	private JPanel panel1 = new JPanel();
+	private JTextArea area = new JTextArea();
+	private JOptionPane pane = new JOptionPane();
 
 	public GUITabel() {
 
@@ -48,6 +59,7 @@ public class GUITabel extends JFrame {
 		panel = new MyPanel();
 		panel.setLayout(null);
 		panel.add(button);
+
 		button.setBounds(420, 380, 70, 70);
 		button.setForeground(Color.BLUE);
 
@@ -55,7 +67,7 @@ public class GUITabel extends JFrame {
 		int counter = 0;
 		for (int i = 0; i < cardLabels.length; i++) {
 			cardLabels[i] = new JLabel();
-			cardLabels[i].setSize(105, 155);
+			cardLabels[i].setSize(110, 160);
 			cardLabels[i].setFocusable(true);
 			cardLabels[i].setLocation(595 - counter, 495);
 			counter += 120;
@@ -67,13 +79,46 @@ public class GUITabel extends JFrame {
 		add(bar, BorderLayout.NORTH);
 		bar.add(menuGame);
 		bar.add(menuHelp);
+		exitGame.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+
+			}
+		});
+
+		howToPlay.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+
+				pane.setOpaque(true);
+				pane.setVisible(true);
+				pane.setSize(200, 200);
+				pane.setMessage("Igra magaraca. Cilj igre je da se skupe 4 karte istog znaka (npr. 4 kralja) i da se namagarci"
+						+ "protivnik. "
+						+ "Igrac koji igra prvi dobija 5 karata i on zapocinje igru. Desnom igracu od sebe salje jednu kartu"
+						+ "po izboru i tako u krug. Ako igrac dobije kartu dzoker mora da je zadrzi dva kruga i ne moze da "
+						+ "pritisne dugme finis iako je sakupio 4 iste karte. Nakon dva kuga moguce je poslati kartu jocker. "
+						+ "Kada sakupi 4 karte igrac pritisne dugme finish, drugi igraci vide da je on zavrsio i onda i oni"
+						+ "treba da pritisnu to dugme. Igrac koj posledni pritisne dugme na game table dobija slovo M. "
+						+ "Kraj igre je kad jedna igrac stigne do rijeci MAGARAC on je izgubio.");
+
+			}
+		});
 
 		menuGame.add(newGame);
 		menuGame.add(exitGame);
 		menuHelp.add(howToPlay);
 		add(panel, BorderLayout.CENTER);
+		add(panel1, BorderLayout.EAST);
+		panel1.setOpaque(true);
+		panel1.setLayout(new BorderLayout());
+		panel1.add(area, BorderLayout.CENTER);
+		area.setText("Game Table");
 
-		setSize(951, 728);
+		setSize(1020, 728);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
@@ -110,21 +155,15 @@ public class GUITabel extends JFrame {
 			g.drawImage(playerImg, 885, 238, 60, 60, null);
 
 			System.out.print("*");
-			
+
 			int counter = 0;
 			for (int i = 0; i < 5; i++) {
 				System.out.print("-");
-				g.drawImage(Deck.getCards().get(i).getSuitImge(), 600 - counter,
+				g.drawImage(d.getCards().get(i).getSuitImge(), 600 - counter,
 						500, 100, 150, null);
 				counter += 120;
 			}
 			System.out.print("*");
-			
-			// g.drawImage(CardImages.Jdiamond, 600, 500, 100, 150, null);
-			// g.drawImage(CardImages.Kspade, 480, 500, 100, 150, null);
-			// g.drawImage(CardImages.Qtref, 360, 500, 100, 150, null);
-			// g.drawImage(CardImages.Qdiamond, 240, 500, 100, 150, null);
-			// g.drawImage(CardImages.Qdiamond, 120, 500, 100, 150, null);
 
 			g.drawImage(CardImages.cardback, 520, 130, 50, 70, null);
 			g.drawImage(CardImages.cardback, 460, 130, 50, 70, null);
@@ -141,7 +180,6 @@ public class GUITabel extends JFrame {
 			g.drawImage(CardImages.cardback, 140, 290, 70, 50, null);
 			g.drawImage(CardImages.cardback, 140, 350, 70, 50, null);
 
-			//repaint();
 			System.out.println(":(");
 
 		}
@@ -157,7 +195,7 @@ public class GUITabel extends JFrame {
 
 		@Override
 		public void mouseClicked(MouseEvent e) {
-			System.out.println("klik");
+		
 
 		}
 

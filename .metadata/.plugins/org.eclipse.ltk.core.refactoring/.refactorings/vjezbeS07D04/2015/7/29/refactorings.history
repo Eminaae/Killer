@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 6 elements to &apos;igrica/src&apos;&#x0A;- Original project: &apos;vjezbeS07D04&apos;&#x0A;- Destination element: &apos;igrica/src&apos;&#x0A;- Original elements:&#x0A;     vjezbeS07D04.Mine.java&#x0A;     vjezbeS07D04.Main.java&#x0A;     vjezbeS07D04.MineSweeper.java&#x0A;     mina.png&#x0A;     bomb3.png&#x0A;     booom.png" description="Copy elements" destination="=igrica/src" element1="src/vjezbeS07D04/mina.png" element2="src/vjezbeS07D04/bomb3.png" element3="src/vjezbeS07D04/booom.png" element4="/src&lt;vjezbeS07D04{Mine.java" element5="/src&lt;vjezbeS07D04{Main.java" element6="/src&lt;vjezbeS07D04{MineSweeper.java" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1436952492918" units="3" version="1.0"/>
+</session>

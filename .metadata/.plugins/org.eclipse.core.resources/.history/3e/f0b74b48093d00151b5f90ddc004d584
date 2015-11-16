@@ -1,0 +1,28 @@
+package cardgame;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class GUITabel extends JFrame {
+	private static final long serialVersionUID = -2870577041754803449L;
+	private static JLabel label = new JLabel();
+	ImageIcon icon = new ImageIcon(
+			GUITabel.class.getResource("/greenbyrequest.png"));
+
+	public GUITabel() {
+		add(label);
+
+		label.setIcon(icon);
+
+		setSize(1000, 2000);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new GUITabel();
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ba.bitcamp.task3.Antena&apos; to &apos;Anntena&apos;&#x0A;- Original project: &apos;vjezbeS05D03&apos;&#x0A;- Original element: &apos;ba.bitcamp.task3.Antena&apos;&#x0A;- Renamed element: &apos;ba.bitcamp.task3.Anntena&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Antena&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ba.bitcamp.task3{Antena.java[Antena" matchStrategy="1" name="Anntena" qualified="false" references="true" similarDeclarations="false" stamp="1434545836026" textual="false" version="1.0"/>
+</session>

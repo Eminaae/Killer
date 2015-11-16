@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;IsPositive.java&apos; to &apos;predavanja05/src&apos;&#x0A;- Original project: &apos;predavanja05&apos;&#x0A;- Destination element: &apos;predavanja05/src&apos;&#x0A;- Original element: &apos;ba.bitcamp.kristina.predavanja05.IsPositive.java&apos;" description="Copy compilation unit" destination="/src" element1="/src&lt;ba.bitcamp.kristina.predavanja05{IsPositive.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1432285043026" units="1" version="1.0"/>
+</session>

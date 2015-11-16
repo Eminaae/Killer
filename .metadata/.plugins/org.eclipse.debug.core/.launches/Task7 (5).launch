@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/vjezbeS04D01vjezbe/src/vjezbeS04D01/Task7.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="vjezbeS04D01.Task7"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="1&#10;2&#10;3&#10;4&#10;5&#10;6&#10;10&#10;15&#10;20&#10;21"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="vjezbeS04D01vjezbe"/>
+</launchConfiguration>

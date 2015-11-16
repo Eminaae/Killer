@@ -1,0 +1,23 @@
+package vjezbeS11D02;
+
+import java.util.Map;
+
+public class Task4 {
+	public Map<String, String> ip;
+	
+	public Task4() {
+		String key = "";
+		String name = "";
+		while () {
+			
+		}
+		ip.put(, value)
+	}
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

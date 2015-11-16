@@ -1,0 +1,44 @@
+package vjezbeS11D02;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.net.Socket;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Task2Chat extends JFrame {
+	
+	private JTextField text = new JTextField("MESAGE:");
+	private JButton button = new JButton("SEND");
+	
+	public Task2Chat () {
+		add(text);
+		add(button);
+		
+		setVisible(true);
+		setSize(400, 400);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+	
+	public static void main(String[] args) {
+		Socket socket;
+		try {
+			socket = new Socket("10.0.82.98", 8888);
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+					socket.getOutputStream()));
+
+			writer.write("Kristina Pupavac");
+			writer.newLine();
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Poslata poruka.");
+
+	}
+
+}

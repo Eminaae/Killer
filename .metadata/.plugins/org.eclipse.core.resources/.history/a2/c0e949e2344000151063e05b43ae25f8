@@ -1,0 +1,107 @@
+package cardgame;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+
+public class GUITabel extends JFrame {
+	private static final long serialVersionUID = -2870577041754803449L;
+	// static JLabel label = new JLabel();
+	public static BufferedImage img = null;
+
+	private static JPanel panel;
+
+	//ImageIcon icon = new ImageIcon(GUITabel.class.getResource("/greenbyrequest.png"));
+	private JMenuBar bar = new JMenuBar();
+	public static JMenu menuGame = new JMenu("Game");
+	public static JMenu menuHelp = new JMenu("Help");
+
+	private JMenuItem newGame = new JMenuItem("New");
+	private JMenuItem exitGame = new JMenuItem("Exit");
+	private JMenuItem howToPlay = new JMenuItem("How to pla y");
+
+	public GUITabel() {
+
+		try {
+			img = ImageIO.read(new File("greenbyrequest3.jpg"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		panel = new MyPanel();
+		setLayout(new BorderLayout());
+		add(bar, BorderLayout.NORTH);
+		bar.add(menuGame);
+		bar.add(menuHelp);
+
+		menuGame.add(newGame);
+		menuGame.add(exitGame);
+		menuHelp.add(howToPlay);
+		add(panel, BorderLayout.CENTER);
+
+		// label.setIcon(icon);
+
+		setSize(951, 728);
+		setResizable(false);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		try {
+			CardImages.BufferCardImages();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		new GUITabel();
+		
+
+	}
+	
+	/**
+	 * Paint table picture on panel
+	 * @author KrisTina
+	 *
+	 */
+	public class MyPanel extends JPanel {
+		private static final long serialVersionUID = -6446634635700606218L;
+
+		@Override
+		protected void paintComponent(Graphics g) {
+			super.paintComponent(g);
+			g.drawImage(img, 0, 0, img.getWidth(), img.getHeight(), null);
+			
+			g.setColor(Color.CYAN);
+			g.drawImage(CardImages.Jdiamond, 600, 500, 100, 150, null);
+			g.drawImage(CardImages.Jdiamond, 480, 500, 100, 150, null);
+			g.drawImage(CardImages.Jdiamond, 360, 500, 100, 150, null);
+			g.drawImage(CardImages.Jdiamond, 240, 500, 100, 150, null);
+			
+			
+			g.drawImage(CardImages.cardback, 600, 130, 50, 70, null);
+			g.drawImage(CardImages.cardback, 540, 130, 50, 70, null);
+			g.drawImage(CardImages.cardback, 470, 130, 50, 70, null);
+			g.drawImage(CardImages.cardback, 400, 130, 50, 70, null);
+		
+			//g.fillRect(600, 500, 100, 150);
+			repaint();
+			
+			
+
+		}
+	}
+	
+
+
+}

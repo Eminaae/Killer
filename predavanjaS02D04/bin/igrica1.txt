@@ -1,0 +1,4 @@
+Number of points is: 1.0
+Multiply the following numbers: 4.0 * 3.0
+Input result: 
+Number of points is: 0.0

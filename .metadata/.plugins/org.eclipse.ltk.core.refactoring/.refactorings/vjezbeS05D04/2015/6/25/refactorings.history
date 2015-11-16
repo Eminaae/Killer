@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ba.bitcamp.sport.BallSpport&apos; to &apos;BallSports&apos;&#x0A;- Original project: &apos;vjezbeS05D04&apos;&#x0A;- Original element: &apos;ba.bitcamp.sport.BallSpport&apos;&#x0A;- Renamed element: &apos;ba.bitcamp.sport.BallSports&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BallSpport&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ba.bitcamp.sport{BallSpport.java[BallSpport" matchStrategy="1" name="BallSports" qualified="false" references="true" similarDeclarations="false" stamp="1434640583533" textual="false" version="1.0"/>
+</session>

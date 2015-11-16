@@ -1,0 +1,38 @@
+package cardgame;
+
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+public class GUITabel extends JFrame{
+	private static final long serialVersionUID = -2870577041754803449L;
+	private static JPanel panelTable = new JPanel();
+
+	
+	
+	public GUITabel () {
+		add(panelTable);
+		
+		BufferedImage img = null;
+		try {
+		    img = ImageIO.read(new File("greenbyrequest.png"));
+		} catch (IOException e) {
+		}
+		
+		setSize(500, 400);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new GUITabel();
+
+	}
+
+}

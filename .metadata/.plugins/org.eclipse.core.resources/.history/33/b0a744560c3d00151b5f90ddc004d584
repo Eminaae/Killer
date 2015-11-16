@@ -1,0 +1,30 @@
+package cardgame;
+
+import javax.swing.ImageIcon;
+
+public class Card {
+	private Integer cardNumber;
+	private String cardSign;
+	private ImageIcon cardImage;
+	
+	
+
+	/**
+	 * @param cardNumber
+	 * @param cardSign
+	 * @param cardImage
+	 */
+	public Card(Integer cardNumber, String cardSign, ImageIcon cardImage) {
+		this.cardNumber = cardNumber;
+		this.cardSign = cardSign;
+		this.cardImage = cardImage;
+	}
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;predavanjaS09D03.ComparabelUtils&apos; to &apos;ComparableUtils&apos;&#x0A;- Original project: &apos;predavanjaS09D03&apos;&#x0A;- Original element: &apos;predavanjaS09D03.ComparabelUtils&apos;&#x0A;- Renamed element: &apos;predavanjaS09D03.ComparableUtils&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ComparabelUtils&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;predavanjaS09D03{ComparabelUtils.java[ComparabelUtils" matchStrategy="1" name="ComparableUtils" qualified="false" references="true" similarDeclarations="false" stamp="1436951394925" textual="false" version="1.0"/>
+</session>

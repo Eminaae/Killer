@@ -1,0 +1,28 @@
+package cardgame;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+public class GUITabel extends JFrame{
+	private static final long serialVersionUID = -2870577041754803449L;
+	private static JPanel panelTable = new JPanel(tableIcon);
+	private static ImageIcon tableIcon = new ImageIcon(GUITabel.class.getResource("/booom.png"));
+	
+	public GUITabel () {
+		add(panelTable);
+		
+		
+		
+		setSize(500, 400);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new GUITabel();
+
+	}
+
+}
